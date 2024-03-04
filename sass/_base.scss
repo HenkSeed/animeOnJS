@@ -281,14 +281,22 @@ ol {
 }
 
 .search-model {
-  display: none;
+  // display: none;
   position: fixed;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
   background: #000;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s, z-index 0.3s;
+  // z-index: 99999;
+}
+
+.search-model.active {
   z-index: 99999;
+  opacity: 1;
 }
 
 .search-model-form {

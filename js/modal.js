@@ -13,11 +13,11 @@ const modal = () => {
 	});
 
 	iconBtn.addEventListener('click', () => {
-		searchModal.style.display = 'block';
+		searchModal.classList.add('active');
 	});
 
 	searchClose.addEventListener('click', () => {
-		searchModal.style.display = 'none';
+		searchModal.classList.remove('active');
 	});
 };
 
