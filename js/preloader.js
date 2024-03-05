@@ -8,4 +8,4 @@ const preloader = () => {
 	}, 500);
 };
 
-preloader();
+// preloader();
